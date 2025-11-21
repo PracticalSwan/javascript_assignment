@@ -30,14 +30,13 @@
             "Julia James"
         ];
 
-        function filterByLetter(letter) {
-            return people.filter(function(name) {
-                return name.charAt(0) === letter;
-            });
+        function startsWithB(name) {
+            return name.charAt(0) === "B";
         }
 
-        const result = filterByLetter("B");
+        const result = people.filter(startsWithB);
         console.log(result);
+        
     </script>
 </body>
 </html>
