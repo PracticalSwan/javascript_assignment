@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment 3</title>
+</head>
+<body>
+    <script>
+        const people = [
+            "Alice Anderson",
+            "Aaron Adams",
+            "Bella Brown",
+            "Brian Black",
+            "Cathy Carter",
+            "Charles Cooper",
+            "Diana Davis",
+            "Daniel Drake",
+            "Ella Evans",
+            "Ethan Edwards",
+            "Fiona Fisher",
+            "Frank Foster",
+            "Grace Green",
+            "Gavin Gray",
+            "Hannah Harris",
+            "Henry Hill",
+            "Isabella Ingram",
+            "Ian Irving",
+            "Jack Johnson",
+            "Julia James"
+        ];
+
+        function filterByLetter(letter) {
+            return people.filter(function(name) {
+                return name.charAt(0) === letter;
+            });
+        }
+
+        const result = filterByLetter("B");
+        console.log(result);
+    </script>
+</body>
+</html>
